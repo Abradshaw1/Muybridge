@@ -13,8 +13,6 @@
 
 From a single RGB frame, the system produces **2D keypoints**, **relative depth map**, **Fused 2.5D keypoints and center-of-mass (COM) estimates (centroid + geometric-median variants)** to build **joint-centric 2.5D trajectories** that are suitable for biomechanics, gait analysis, and in-the-wild human monitoring — all while running in real-time from quantization, pruning, and Core ML export for efficient deployment on consumer hardware, iPhone.
 
----
-
 ## Features
 - 🧍 **2D Keypoints** via ElifPose (26 HALPE joints).  
 - 🔹 **Depth Maps** via Marigold diffusion-style UNet (with CLIP removed, lightweight conditioning).  
@@ -22,8 +20,6 @@ From a single RGB frame, the system produces **2D keypoints**, **relative depth 
 - 🎯 **Center of Mass Tracking**: 2D centroid & geometric median; 3D centroid & geometric median (projected to image plane).  
 - ⚡ **Edge-Friendly**: INT8 quantized, FP16 path; quantization and export hooks (Core ML/ONNX), pruned models for on-device deployment.  
 - 🧪 **Single entry point**: (`run_fuse.py`): single entrypoint to fuse pose + depth.
-
----
 
 ## Repository Structure
 ```bash
@@ -45,7 +41,6 @@ Muybridge/
 ├── run_fuse.py # Main pipeline runner
 └── README.md
 ```
----
 
 ## Quickstart (venv)
 
