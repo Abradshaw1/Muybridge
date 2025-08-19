@@ -6,28 +6,8 @@
 
 ## Overview
 
-Overview
-
-Muybridge is a lightweight, edge-native perception pipeline that fuses:
-
-    2D Pose Estimation — ElifPose (HALPE-26)
-
-    Monocular Depth — Marigold (Diffusers)
-
-    2.5D Fusion — keypoint-aligned depth sampling + center-of-mass proxies
-
-From a single RGB frame, the system outputs:
-
-    2D keypoints
-
-    A relative depth map
-
-    Fused 2.5D keypoints and center-of-mass (COM) estimates (centroid + geometric-median variants)
-
-Designed for fast, reproducible experiments and on-device deployment.
-
 **Muybridge** is a lightweight, edge-native perception pipeline that fuses:
-1. **2D Pose Estimation (ElifPose)**  
+1. **2D Pose Estimation (ElifPos, HALPE-26)**  
 2. **Monocular Depth Estimation (Marigold)**  
 3. **Fusion Module for 2.5D Center-of-Mass Tracking**
 
