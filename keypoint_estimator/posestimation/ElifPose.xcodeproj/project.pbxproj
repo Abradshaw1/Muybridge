@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00974F52C495EC9003D08EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02BA4832C43146A006CE7A0 /* Assets.xcassets */; };
+		A00974FB2C49FE68003D08EF /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00974FA2C49FE68003D08EF /* CameraView.swift */; };
+		A00974FD2C4A0690003D08EF /* Keypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00974FC2C4A0690003D08EF /* Keypoint.swift */; };
+		A02BA4822C431469006CE7A0 /* GuidanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02BA4812C431469006CE7A0 /* GuidanceView.swift */; };
+		A037C0BA2C56FB4E00B018FF /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A037C0B92C56FB4E00B018FF /* UIImageExtensions.swift */; };
+		A07A7D312C7BE9A600AC6AF2 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A7D302C7BE9A600AC6AF2 /* VideoPicker.swift */; };
+		A07A7D332C7BEDED00AC6AF2 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A7D322C7BEDED00AC6AF2 /* VideoPlayerView.swift */; };
+		A07A7D3B2C807E6A00AC6AF2 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A7D3A2C807E6A00AC6AF2 /* Math.swift */; };
+		A07A7D412C807E8F00AC6AF2 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A7D402C807E8F00AC6AF2 /* UIImage+CVPixelBuffer.swift */; };
+		A07A7D452C807F0600AC6AF2 /* ElifDetModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A07A7D442C807F0600AC6AF2 /* ElifDetModel.mlpackage */; };
+		A07A7D472C807F5600AC6AF2 /* ElifPoseModel.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = A07A7D462C807F5600AC6AF2 /* ElifPoseModel.mlpackage */; };
+		A07A7D492C80827D00AC6AF2 /* CGImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A7D482C80827D00AC6AF2 /* CGImage+RawBytes.swift */; };
+		A07A7D4B2C80828100AC6AF2 /* CGImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07A7D4A2C80828100AC6AF2 /* CGImage+CVPixelBuffer.swift */; };
+		A0D90DF92C46DB0F0028889E /* PoseDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D90DF82C46DB0F0028889E /* PoseDetectionView.swift */; };
+		A0D90DFB2C46DB6D0028889E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D90DFA2C46DB6D0028889E /* HomeView.swift */; };
+		A0D90DFD2C46DBB00028889E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D90DFC2C46DBB00028889E /* SettingsView.swift */; };
+		A0D90DFF2C46DE7A0028889E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D90DFE2C46DE7A0028889E /* App.swift */; };
+		A0D90E042C486EBF0028889E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D90E032C486EBF0028889E /* ImagePicker.swift */; };
+		A0D90E062C4872E00028889E /* ImageDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D90E052C4872E00028889E /* ImageDisplayView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A02BA48D2C43146A006CE7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A02BA4742C431469006CE7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02BA47B2C431469006CE7A0;
+			remoteInfo = ElifSemesterThesis;
+		};
+		A02BA4972C43146A006CE7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A02BA4742C431469006CE7A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02BA47B2C431469006CE7A0;
+			remoteInfo = ElifSemesterThesis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A00974FA2C49FE68003D08EF /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		A00974FC2C4A0690003D08EF /* Keypoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keypoint.swift; sourceTree = "<group>"; };
+		A02BA47C2C431469006CE7A0 /* ElifPose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElifPose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02BA4812C431469006CE7A0 /* GuidanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView.swift; sourceTree = "<group>"; };
+		A02BA4832C43146A006CE7A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A02BA4862C43146A006CE7A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A02BA48C2C43146A006CE7A0 /* ElifPoseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElifPoseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02BA4962C43146A006CE7A0 /* ElifPoseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElifPoseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A037C0B92C56FB4E00B018FF /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		A07A7D302C7BE9A600AC6AF2 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		A07A7D322C7BEDED00AC6AF2 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		A07A7D3A2C807E6A00AC6AF2 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		A07A7D402C807E8F00AC6AF2 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		A07A7D442C807F0600AC6AF2 /* ElifDetModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = ElifDetModel.mlpackage; sourceTree = "<group>"; };
+		A07A7D462C807F5600AC6AF2 /* ElifPoseModel.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = ElifPoseModel.mlpackage; sourceTree = "<group>"; };
+		A07A7D482C80827D00AC6AF2 /* CGImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+RawBytes.swift"; sourceTree = "<group>"; };
+		A07A7D4A2C80828100AC6AF2 /* CGImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		A0D90DF82C46DB0F0028889E /* PoseDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetectionView.swift; sourceTree = "<group>"; };
+		A0D90DFA2C46DB6D0028889E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A0D90DFC2C46DBB00028889E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A0D90DFE2C46DE7A0028889E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		A0D90E002C46E98B0028889E /* ElifPose.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElifPose.entitlements; sourceTree = "<group>"; };
+		A0D90E012C46F2220028889E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D90E032C486EBF0028889E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A0D90E052C4872E00028889E /* ImageDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDisplayView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A02BA4792C431469006CE7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02BA4892C43146A006CE7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02BA4932C43146A006CE7A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A02BA4732C431469006CE7A0 = {
+			isa = PBXGroup;
+			children = (
+				A02BA47E2C431469006CE7A0 /* ElifPose */,
+				A02BA47D2C431469006CE7A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A02BA47D2C431469006CE7A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02BA47C2C431469006CE7A0 /* ElifPose.app */,
+				A02BA48C2C43146A006CE7A0 /* ElifPoseTests.xctest */,
+				A02BA4962C43146A006CE7A0 /* ElifPoseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A02BA47E2C431469006CE7A0 /* ElifPose */ = {
+			isa = PBXGroup;
+			children = (
+				A0D90E002C46E98B0028889E /* ElifPose.entitlements */,
+				A07A7D322C7BEDED00AC6AF2 /* VideoPlayerView.swift */,
+				A07A7D302C7BE9A600AC6AF2 /* VideoPicker.swift */,
+				A0D90E032C486EBF0028889E /* ImagePicker.swift */,
+				A02BA4812C431469006CE7A0 /* GuidanceView.swift */,
+				A0D90DF82C46DB0F0028889E /* PoseDetectionView.swift */,
+				A0D90DFA2C46DB6D0028889E /* HomeView.swift */,
+				A0D90DFC2C46DBB00028889E /* SettingsView.swift */,
+				A0D90DFE2C46DE7A0028889E /* App.swift */,
+				A0D90E052C4872E00028889E /* ImageDisplayView.swift */,
+				A00974FA2C49FE68003D08EF /* CameraView.swift */,
+				A00974FC2C4A0690003D08EF /* Keypoint.swift */,
+				A037C0B92C56FB4E00B018FF /* UIImageExtensions.swift */,
+				A07A7D4A2C80828100AC6AF2 /* CGImage+CVPixelBuffer.swift */,
+				A07A7D482C80827D00AC6AF2 /* CGImage+RawBytes.swift */,
+				A07A7D3A2C807E6A00AC6AF2 /* Math.swift */,
+				A07A7D402C807E8F00AC6AF2 /* UIImage+CVPixelBuffer.swift */,
+				A07A7D442C807F0600AC6AF2 /* ElifDetModel.mlpackage */,
+				A07A7D462C807F5600AC6AF2 /* ElifPoseModel.mlpackage */,
+				A02BA4862C43146A006CE7A0 /* Preview Assets.xcassets */,
+				A0D90E012C46F2220028889E /* Info.plist */,
+				A02BA4832C43146A006CE7A0 /* Assets.xcassets */,
+				A02BA4852C43146A006CE7A0 /* Preview Content */,
+			);
+			path = ElifPose;
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		A02BA4852C43146A006CE7A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A02BA47B2C431469006CE7A0 /* ElifPose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02BA4A02C43146A006CE7A0 /* Build configuration list for PBXNativeTarget "ElifPose" */;
+			buildPhases = (
+				A02BA4782C431469006CE7A0 /* Sources */,
+				A02BA4792C431469006CE7A0 /* Frameworks */,
+				A02BA47A2C431469006CE7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElifPose;
+			productName = ElifSemesterThesis;
+			productReference = A02BA47C2C431469006CE7A0 /* ElifPose.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A02BA48B2C43146A006CE7A0 /* ElifPoseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02BA4A32C43146A006CE7A0 /* Build configuration list for PBXNativeTarget "ElifPoseTests" */;
+			buildPhases = (
+				A02BA4882C43146A006CE7A0 /* Sources */,
+				A02BA4892C43146A006CE7A0 /* Frameworks */,
+				A02BA48A2C43146A006CE7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A02BA48E2C43146A006CE7A0 /* PBXTargetDependency */,
+			);
+			name = ElifPoseTests;
+			productName = ElifSemesterThesisTests;
+			productReference = A02BA48C2C43146A006CE7A0 /* ElifPoseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A02BA4952C43146A006CE7A0 /* ElifPoseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02BA4A62C43146A006CE7A0 /* Build configuration list for PBXNativeTarget "ElifPoseUITests" */;
+			buildPhases = (
+				A02BA4922C43146A006CE7A0 /* Sources */,
+				A02BA4932C43146A006CE7A0 /* Frameworks */,
+				A02BA4942C43146A006CE7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A02BA4982C43146A006CE7A0 /* PBXTargetDependency */,
+			);
+			name = ElifPoseUITests;
+			productName = ElifSemesterThesisUITests;
+			productReference = A02BA4962C43146A006CE7A0 /* ElifPoseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A02BA4742C431469006CE7A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A02BA47B2C431469006CE7A0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A02BA48B2C43146A006CE7A0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A02BA47B2C431469006CE7A0;
+					};
+					A02BA4952C43146A006CE7A0 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A02BA47B2C431469006CE7A0;
+					};
+				};
+			};
+			buildConfigurationList = A02BA4772C431469006CE7A0 /* Build configuration list for PBXProject "ElifPose" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A02BA4732C431469006CE7A0;
+			productRefGroup = A02BA47D2C431469006CE7A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A02BA47B2C431469006CE7A0 /* ElifPose */,
+				A02BA48B2C43146A006CE7A0 /* ElifPoseTests */,
+				A02BA4952C43146A006CE7A0 /* ElifPoseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A02BA47A2C431469006CE7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00974F52C495EC9003D08EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02BA48A2C43146A006CE7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02BA4942C43146A006CE7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A02BA4782C431469006CE7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00974FD2C4A0690003D08EF /* Keypoint.swift in Sources */,
+				A0D90E062C4872E00028889E /* ImageDisplayView.swift in Sources */,
+				A0D90DFD2C46DBB00028889E /* SettingsView.swift in Sources */,
+				A07A7D4B2C80828100AC6AF2 /* CGImage+CVPixelBuffer.swift in Sources */,
+				A00974FB2C49FE68003D08EF /* CameraView.swift in Sources */,
+				A07A7D492C80827D00AC6AF2 /* CGImage+RawBytes.swift in Sources */,
+				A02BA4822C431469006CE7A0 /* GuidanceView.swift in Sources */,
+				A07A7D452C807F0600AC6AF2 /* ElifDetModel.mlpackage in Sources */,
+				A0D90DFB2C46DB6D0028889E /* HomeView.swift in Sources */,
+				A07A7D412C807E8F00AC6AF2 /* UIImage+CVPixelBuffer.swift in Sources */,
+				A07A7D472C807F5600AC6AF2 /* ElifPoseModel.mlpackage in Sources */,
+				A0D90E042C486EBF0028889E /* ImagePicker.swift in Sources */,
+				A07A7D312C7BE9A600AC6AF2 /* VideoPicker.swift in Sources */,
+				A0D90DFF2C46DE7A0028889E /* App.swift in Sources */,
+				A037C0BA2C56FB4E00B018FF /* UIImageExtensions.swift in Sources */,
+				A0D90DF92C46DB0F0028889E /* PoseDetectionView.swift in Sources */,
+				A07A7D332C7BEDED00AC6AF2 /* VideoPlayerView.swift in Sources */,
+				A07A7D3B2C807E6A00AC6AF2 /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02BA4882C43146A006CE7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02BA4922C43146A006CE7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A02BA48E2C43146A006CE7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02BA47B2C431469006CE7A0 /* ElifPose */;
+			targetProxy = A02BA48D2C43146A006CE7A0 /* PBXContainerItemProxy */;
+		};
+		A02BA4982C43146A006CE7A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02BA47B2C431469006CE7A0 /* ElifPose */;
+			targetProxy = A02BA4972C43146A006CE7A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A02BA49E2C43146A006CE7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A02BA49F2C43146A006CE7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A02BA4A12C43146A006CE7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ElifPose/ElifPose.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ElifPose/Preview Content\"";
+				DEVELOPMENT_TEAM = 2J76PP379L;
+				DONT_GENERATE_INFOPLIST_FILE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/ElifPose/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elif.ElifPose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A02BA4A22C43146A006CE7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ElifPose/ElifPose.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ElifPose/Preview Content\"";
+				DEVELOPMENT_TEAM = 2J76PP379L;
+				DONT_GENERATE_INFOPLIST_FILE = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/ElifPose/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elif.ElifPose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A02BA4A42C43146A006CE7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elif.ElifSemesterThesisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElifPose.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ElifPose";
+			};
+			name = Debug;
+		};
+		A02BA4A52C43146A006CE7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elif.ElifSemesterThesisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElifPose.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ElifPose";
+			};
+			name = Release;
+		};
+		A02BA4A72C43146A006CE7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elif.ElifSemesterThesisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElifSemesterThesis;
+			};
+			name = Debug;
+		};
+		A02BA4A82C43146A006CE7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elif.ElifSemesterThesisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElifSemesterThesis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A02BA4772C431469006CE7A0 /* Build configuration list for PBXProject "ElifPose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02BA49E2C43146A006CE7A0 /* Debug */,
+				A02BA49F2C43146A006CE7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02BA4A02C43146A006CE7A0 /* Build configuration list for PBXNativeTarget "ElifPose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02BA4A12C43146A006CE7A0 /* Debug */,
+				A02BA4A22C43146A006CE7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02BA4A32C43146A006CE7A0 /* Build configuration list for PBXNativeTarget "ElifPoseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02BA4A42C43146A006CE7A0 /* Debug */,
+				A02BA4A52C43146A006CE7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02BA4A62C43146A006CE7A0 /* Build configuration list for PBXNativeTarget "ElifPoseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02BA4A72C43146A006CE7A0 /* Debug */,
+				A02BA4A82C43146A006CE7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A02BA4742C431469006CE7A0 /* Project object */;
+}
