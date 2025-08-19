@@ -59,12 +59,54 @@ def plot_overlay_depth_centers(Z, pts2d, centers2d, centers3d_uv, save_path):
     plt.savefig(save_path, dpi=180, bbox_inches='tight', pad_inches=0.0)
     plt.close()
 
-def plot_hist_depth(kz, save_path):
-    plt.figure(figsize=(6,4))
-    plt.hist(kz, bins=min(len(kz), 12))
-    plt.xlabel("Depth")
+def plot_hist_depth(
+    kz,
+    save_path,
+    *,
+    z_centroid_2d=None,
+    z_geommed_2d=None,
+    z_centroid_3d=None,
+    z_geommed_3d=None,
+):
+    """Histogram of per-keypoint depths with reference lines.
+
+    kz: array-like depths (one per keypoint)
+    save_path: output PNG
+    optional refs: floats (depths) to draw as vertical lines
+    """
+    kz = np.asarray(kz, dtype=np.float32)
+    kz = kz[np.isfinite(kz)]             # guard NaNs/Infs
+    if kz.size == 0:
+        raise ValueError("plot_hist_depth: no finite depths")
+
+    mean = float(np.mean(kz))
+    median = float(np.median(kz))
+
+    lo, hi = float(np.min(kz)), float(np.max(kz))
+    if lo == hi:                         # avoid zero-width range
+        lo -= 1e-6
+        hi += 1e-6
+
+    plt.figure(figsize=(6.6, 4.4))
+    plt.hist(kz, bins=min(len(kz), 12), range=(lo, hi))
+
+    # reference lines
+    plt.axvline(mean,   linestyle="--", linewidth=2, label=f"mean={mean:.3f}")
+    plt.axvline(median, linestyle=":",  linewidth=2, label=f"median={median:.3f}")
+
+    if z_centroid_2d is not None:
+        plt.axvline(float(z_centroid_2d), linewidth=1.8, label=f"z@2D centroid={float(z_centroid_2d):.3f}")
+    if z_geommed_2d is not None:
+        plt.axvline(float(z_geommed_2d),  linewidth=1.8, label=f"z@2D geom.med={float(z_geommed_2d):.3f}")
+    if z_centroid_3d is not None:
+        plt.axvline(float(z_centroid_3d), linewidth=1.5, label=f"Z(3D centroid)={float(z_centroid_3d):.3f}")
+    if z_geommed_3d is not None:
+        plt.axvline(float(z_geommed_3d),  linewidth=1.5, label=f"Z(3D geom.med)={float(z_geommed_3d):.3f}")
+
+    plt.xlabel("Depth at keypoints")
     plt.ylabel("count")
-    plt.title("Keypoint-depth distribution")
+    plt.title("Keypoint-depth distribution (26 pts)")
+    plt.legend()
     plt.tight_layout()
     plt.savefig(save_path, dpi=180)
     plt.close()

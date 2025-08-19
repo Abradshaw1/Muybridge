@@ -89,7 +89,21 @@ def process_one(rgb_path, args):
 
     # ---------- Save histogram
     hist_png = os.path.join(args.out_dir, f"{base}_depth_hist.png")
-    plot_hist_depth(kz, save_path=hist_png)
+
+    # stats used by the plot
+    kp_mean   = float(np.mean(kz))
+    kp_median = float(np.median(kz))
+    z_centroid_3d = float(centroid_3d[2])
+    z_geommed_3d  = float(geommed_3d[2])
+
+    plot_hist_depth(
+        kz,
+        save_path=hist_png,
+        z_centroid_2d=z_centroid_2d,
+        z_geommed_2d=z_geommed_2d,
+        z_centroid_3d=z_centroid_3d,
+        z_geommed_3d=z_geommed_3d,
+    )
 
     # ---------- Save NPZ summary
     npz_path = os.path.join(args.out_dir, f"{base}_fusion.npz")
@@ -100,7 +114,9 @@ def process_one(rgb_path, args):
         z_centroid_2d=z_centroid_2d, z_geommed_2d=z_geommed_2d,
         centroid_3d=centroid_3d, geommed_3d=geommed_3d,
         centroid_3d_uv=centroid_3d_uv, geommed_3d_uv=geommed_3d_uv,
-        fx=fx, fy=fy, cx=cx, cy=cy
+        fx=fx, fy=fy, cx=cx, cy=cy,
+        kp_mean=kp_mean, kp_median=kp_median,
+        z_centroid_3d=z_centroid_3d, z_geommed_3d=z_geommed_3d,
     )
 
     print(f"[FUSION] DONE  overlay='{overlay_png}', points3d='{scatter3d_png}', hist='{hist_png}', npz='{npz_path}'")
