@@ -26,7 +26,7 @@ From a single RGB frame, the system produces **2D keypoints**, **relative depth 
 ---
 
 ## Repository Structure
-
+```bash
 Muybridge/
 │
 ├── depth_constructor/Marigold # Marigold depth estimation (submodule-style)
@@ -44,7 +44,7 @@ Muybridge/
 ├── fusion_outputs/ # Example pose + depth outputs
 ├── run_fuse.py # Main pipeline runner
 └── README.md
-
+```
 ---
 
 ## Quickstart (venv)
