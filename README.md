@@ -75,4 +75,4 @@ chmod +x coreml_download.sh
 ./coreml_download.sh
 ```
 
-You can also download the models manually from the Google Drive folder: https://drive.google.com/drive/folders/18vshM0p49UUyNOF0hxvAjbY7KmMcmuhU
+You can also download the models manually from the Google Drive folder: [Google Drive – Core ML Models](https://drive.google.com/drive/folders/18vshM0p49UUyNOF0hxvAjbY7KmMcmuhU)
