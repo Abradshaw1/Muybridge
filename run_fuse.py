@@ -1,4 +1,3 @@
-# run_fuse.py
 import os, sys, glob, argparse, numpy as np
 
 repo_root = os.path.dirname(os.path.abspath(__file__))
