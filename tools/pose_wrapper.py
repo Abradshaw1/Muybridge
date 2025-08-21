@@ -72,10 +72,23 @@ def run_pose(image_path: str, ckpt_path: str, device=None, save_pose_vis_to: str
     packed = PackPoseInputs(packed)
     input_tensor = packed['inputs'].unsqueeze(0).float().to(device)
 
-    model = ElifPose()
-    sd = torch.load(ckpt_path, map_location=device, weights_only=False)
-    model.load_state_dict(sd, strict=False)
-    model.to(device).eval()
+    model = ElifPose(load_backbone_from_disk=False)
+    # robustly unwrap the checkpoint
+    blob = torch.load(ckpt_path, map_location=device)
+    state = (
+        blob["state_dict"] if isinstance(blob, dict) and "state_dict" in blob else
+        blob["model"]      if isinstance(blob, dict) and "model" in blob else
+        blob
+    )
+    missing, unexpected = model.load_state_dict(state, strict=False)
+    print(f"[KEYPOINTS] ElifPose checkpoint loaded: {os.path.basename(ckpt_path)} "
+          f"(missing={len(missing)}, unexpected={len(unexpected)})")
+
+    model = model.to(device).eval()
+    # model = ElifPose()
+    # sd = torch.load(ckpt_path, map_location=device, weights_only=False)
+    # model.load_state_dict(sd, strict=False)
+    # model.to(device).eval()
 
     codec_cfg = dict(input_size=input_size, sigma=(4.9,5.66),
                      simcc_split_ratio=2.0, normalize=False, use_dark=False)

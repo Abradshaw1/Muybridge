@@ -85,7 +85,9 @@ class ElifPose(nn.Module):
                 beta=10.,
                 label_softmax=True),
             decoder=codec),
-        test_cfg=dict(flip_test=True)
+        test_cfg=dict(flip_test=True),
+        load_backbone_from_disk: bool = False
+
     ):
         super().__init__()
         self.backbone = CSPNeXt(**backbone_params)
@@ -95,7 +97,8 @@ class ElifPose(nn.Module):
         self.with_neck = False
         self.with_head = True
         # Initialize model weights
-        self.init_model(pretrained=True)
+        if load_backbone_from_disk:
+            self.init_model(pretrained=True)
 
     def init_model(self, pretrained: bool = True):
         """
